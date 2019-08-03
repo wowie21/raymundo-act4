@@ -1,0 +1,26 @@
+API for getting a random year with date :
+    http://numbersapi.com/random/year?json
+    This will give a response like this:
+        {
+            text: "569 is the year that John of Ephesus completes his Biographies of Eastern Saints.",
+            number: 569,
+            found: true,
+            type: "year"
+        }
+    Just get the 'text' property for the trivia and 'number' as the date to be passed on the API that generates a trivia based on year
+
+API for getting a trivia by year :
+    http://numbersapi.com/${year}/year
+    Just replace the '${year}' by the year you fetched from the first API call
+
+    Sample:    
+        http://numbersapi.com/569/year
+    This will give a text response like this:
+        569 is the year that John of Ephesus completes his Biographies of Eastern Saints.
+    
+    Use this to display as a sub trivia
+
+Condition:
+    If both trivia are the same just show the first one 
+    While fetching records make sure to disable the button 
+    Limit the fetching up to 5 trivia
